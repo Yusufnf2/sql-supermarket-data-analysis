@@ -48,18 +48,17 @@ Dataset awal memiliki kolom **tanggal dan waktu dalam bentuk string** sehingga t
 The initial dataset stored **date and time as strings**, preventing time-based analysis.
 
 ### 🔧 Solusi | Solution
-
+```
 ALTER TABLE sales
 ADD COLUMN date_clean DATE,
 ADD COLUMN time_clean TIME;
-
+```
+```
 UPDATE sales
 SET 
     date_clean = "Date"::DATE,
     time_clean = "Time"::TIME;
-
 ```
-
 Setelah proses ini, data dapat digunakan untuk analisis berbasis waktu.
 After this step, the data becomes suitable for time-based analysis.
 
