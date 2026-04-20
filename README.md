@@ -195,7 +195,7 @@ After this step, the data becomes suitable for time-based analysis.
 supermarket-sql-analysis/
 │
 ├── dataset/
-│   └── sales.csv
+│   └── SuperMarket Analysis.csv
 │
 ├── queries/
 │   └── analysis.sql
